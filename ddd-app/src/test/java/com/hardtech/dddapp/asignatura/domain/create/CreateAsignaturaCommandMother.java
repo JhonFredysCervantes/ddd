@@ -33,4 +33,22 @@ public final class CreateAsignaturaCommandMother {
         .creditNumber(1)
         .build();
   }
+
+
+  public static CreateAsignaturaCommand zeroCreditNumber() {
+    return CreateAsignaturaCommand.builder()
+            .id("0e2febf5-9e09-49b9-9a71-16195cf5d7f8")
+            .name("ingles")
+            .creditNumber(0)
+            .build();
+  }
+
+  public static CreateAsignaturaCommand negativeCreditNumber() {
+    return CreateAsignaturaCommand.builder()
+            .id("0e2febf5-9e09-49b9-9a71-16195cf5d7f8")
+            .name("ingles")
+            .creditNumber(-1)
+            .build();
+  }
+
 }
